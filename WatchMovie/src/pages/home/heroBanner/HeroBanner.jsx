@@ -13,36 +13,29 @@ const HeroBanner = () => {
   const navigate = useNavigate();
   const { data, loading } = useFetch("/movie/upcoming");
 
-  // useEffect(() => {
-  //   const bg =
-  //     url.backdrop +
-  //     data?.results[Math.floor(Math.random() * 20)]?.backdrop_path;
-  //   setBackground(bg);
-  // }, [data]);
 
-  console.log(background);
+  useEffect(() => {
+    const bg =
+      url.backdrop +
+      data?.results[Math.floor(Math.random() * 20)]?.backdrop_path;
+    setBackground(bg);
+  }, [data]);
 
   const searchQueryHandler = (e) => {
     if (e.key === "Enter" && query.length > 0) {
       navigate(`/search/${query}`);
     }
 
-    if(e.currentTarget.textContent==='search' && query.length>0){
-       navigate(`/search/${query}`);
+    if (e.currentTarget.textContent === "search" && query.length > 0) {
+      navigate(`/search/${query}`);
     }
-
-    
   };
 
   return (
     <div className="heroBanner">
       {!loading && (
         <div className="backdrop-img">
-          <Img
-            src={
-              "https://image.tmdb.org/t/p/original/wD2kUCX1Bb6oeIb2uz7kbdfLP6k.jpg"
-            }
-          />
+          <Img src={background} />
         </div>
       )}
 
