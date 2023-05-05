@@ -23,7 +23,33 @@ function App() {
         dispatch(getApiConfiguartion(url))
       })
       .catch((err) => console.log(err));
+
+
+      genresCall();
+
   }, []);
+
+
+  const genresCall=async()=>{
+    let promises=[];
+    let endPoint=["tv",'movie'];
+    let allGeners={};
+    endPoint.forEach((url)=>{
+      promises.push(fetchDataFromApi(`/genre/${url}/list`))
+    })
+
+    const data=await Promise.all(promises);
+
+    data?.map(({genres})=>{
+       return genres.map((item)=>{
+         return allGeners[item.id]=item;
+       })
+    })
+
+    dispatch(getGeners(allGeners))
+
+  }
+
 
   return (
     <BrowserRouter>

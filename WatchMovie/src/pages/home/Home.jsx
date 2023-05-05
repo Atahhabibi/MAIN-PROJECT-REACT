@@ -1,13 +1,14 @@
 import "./style.scss";
 import HeroBanner from "./heroBanner/HeroBanner";
-import { Trending } from "..";
+import { Popular, TopRated, Trending } from "..";
 const Home = () => {
 
   return (
     <div className="homePage">
       <HeroBanner />
       <Trending/>
-      <div style={{height:1000}}></div>
+      <Popular/>
+      <TopRated/>
     </div>
   );
 };
