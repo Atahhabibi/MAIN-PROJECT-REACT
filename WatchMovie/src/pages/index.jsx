@@ -8,6 +8,8 @@ import Popular from "./home/popular/Popular";
 import TopRated from "./home/topRated/TopRated";
 import DetailsBanner from "./details/detailsBanner/DetailsBanner";
 import { PlayIcon } from "./details/PlayButton";
+import Cast from "./details/cast/Cast";
+import VideosSection from "./details/videosSection/VideosSection";
 
 export {
   DetailsBanner,
@@ -20,4 +22,7 @@ export {
   Popular,
   TopRated,
   PlayIcon,
+  Cast,
+  VideosSection,
+  
 };

@@ -13,7 +13,6 @@ const HeroBanner = () => {
   const navigate = useNavigate();
   const { data, loading } = useFetch("/movie/upcoming");
 
-
   useEffect(() => {
     const bg =
       url.backdrop +
@@ -43,7 +42,7 @@ const HeroBanner = () => {
 
       <ContentWrapper className="wrapper">
         <div className="heroBannerContent">
-          <span className="title">Welcome.</span>
+          <span className="title">Watch Movie</span>
           <span className="subtitle">
             Millions of movies, TV shows and people to discover. Explore now
           </span>

@@ -109,7 +109,7 @@ const DetailsBanner = ({ video, crew }) => {
                         <span className="text">
                           {director.map((d, i) => {
                             return (
-                              <span key={id}>
+                              <span key={i}>
                                 {d.name}
                                 {director.length - 1 !== i && ", "}
                               </span>
@@ -125,7 +125,7 @@ const DetailsBanner = ({ video, crew }) => {
                         <span className="text">
                           {writer.map((d, i) => {
                             return (
-                              <span key={id}>
+                              <span key={i}>
                                 {d.name}
                                 {writer.length - 1 !== i && ", "}
                               </span>
@@ -140,7 +140,7 @@ const DetailsBanner = ({ video, crew }) => {
                         <span className="text">
                           {data?.created_by.map((d, i) => {
                             return (
-                              <span key={id}>
+                              <span key={i}>
                                 {d.name}
                                 {data?.created_by.length - 1 !== i && ", "}
                               </span>
