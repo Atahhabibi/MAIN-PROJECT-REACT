@@ -5,6 +5,10 @@
     background:black;
 }
 
+.login-container{
+    background:black;
+}
+
 .login>img{
     width:100%; 
 }
@@ -17,5 +21,6 @@
     color: white;
     text-decoration: none;
     cursor: pointer;
+    letter-spacing:2px;
 }
 

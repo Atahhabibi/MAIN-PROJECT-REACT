@@ -1,0 +1,4 @@
+export const REACT_TOKEN="BQCw-CvxZEFDPWj3vhlLt-teBH9Kq9z4eqFKUFQOevyh7_0W1hrarMdI_Snb4Uq_-BAFVUqSENACd4kD8dr8Te4gnXooC8YMSF1cLyhoqI9sLu2fznqPlMmJfatyysiTSCu4nTuFH2TvNBHOcv6U5fHq1M_Zrj4VY1iwafW5FUg4A4-g-gOnGyKeh_9wyKmT6bsNRAVlA_CXaCmIIrc3rA";
+
+
+export const spotifylogo="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png"
