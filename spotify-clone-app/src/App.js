@@ -36,7 +36,15 @@ function App() {
           playlists:playlists,
         })
       })
+
+      spotify.getPlaylist("6a9nKUA93vGWqE8ksFMUnY").then((res)=>
+        dispatch({
+          type:'SET_DISCOVER_WEEKLY',
+          discover_weekly:res,
+        })
+      );
     }
+
   }, []);
 
   return <div className="app">{token ? <Player spotify={spotify} /> : <Login />}</div>;
